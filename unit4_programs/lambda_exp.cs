@@ -9,5 +9,11 @@ class Program{
         foreach(string n in devotees){
             Console.WriteLine(n);
         }
+        //also valid, System.Linq is comp to use lambda exp
+        string[] names = new string[]{"astra", "shellghost"};
+        var sent = names.Select(n => n+" is the best");
+        foreach(string n in sent){
+            Console.WriteLine(n);
+        }
     }
 }
